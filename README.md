@@ -4,9 +4,9 @@
 
 Lauren Lazzaro's Development Exercise for Curate.
 
-## Instructions:
+### The Exercise:
 
-### **User Story** 
+#### **User Story** 
 As an Administrator User I’d like the ability to manage questions
 and answers and have them displayed to end users on a FAQ
 page so that I can answer commonly asked questions.
