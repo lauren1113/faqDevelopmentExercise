@@ -13,8 +13,7 @@
 
 #headContainer {
   flex-direction: row;
-  width: 80%;
-  height: auto;
+  height: 350px;
 }
 
 #headerText {
@@ -30,8 +29,8 @@
 }
 
 #headerImageContainer {
-  height: 400px;
-  width: 400px;
+  width: 250px;
+  height: auto;
 }
 
 #headerImage {
