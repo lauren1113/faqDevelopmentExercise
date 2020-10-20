@@ -1,19 +1,24 @@
 * {
-  background-color: #c097ab;
+  background-color: rgb(245, 245, 230);
   color: rgb(17, 0, 17);
   font-family: 'Quicksand', sans-serif;
   margin: 10px 5px;
-  font-size: 14px;
+  font-size: 16px;
 }
 
-.header {
+.header * {
   font-family: 'Dancing Script', cursive;
+  background-color: #c097ab;
   display: flex;
+  flex-direction: row;
+  margin: 0px;
+  justify-content: space-around;
+  padding-bottom: 10px;
+  flex-wrap: nowrap;
 }
 
 #headContainer {
   flex-direction: row;
-  height: 350px;
 }
 
 #headerText {
@@ -29,13 +34,16 @@
 }
 
 #headerImageContainer {
-  width: 250px;
+  width: 350px;
   height: auto;
 }
 
 #headerImage {
-  height: 300px;
-  width: auto;
+  width: 250px;
+  height: auto;
+  flex-wrap: nowrap;
+  flex-direction: row;
+
 }
 
 #faqContainer {
@@ -44,7 +52,21 @@
   justify-content: space-around;
 }
 
+.pageTitle {
+  font-size: 35px;
+  padding: 3px;
+}
+
 #faqImage {
-  max-width: 25%;
-  height: auto;
+  height: 400px;
+}
+
+.contactForm * {
+  background-color: #c097ab;
+  font-size: 16px;
+  padding: 12px;
+}
+
+.button {
+  border-radius: 4px;
 }
