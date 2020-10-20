@@ -1,7 +1,5 @@
 # FAQ Development Exercise
 
-### The Exercise:
-
 #### **User Story** 
 As an Administrator User I’d like the ability to manage questions
 and answers and have them displayed to end users on a FAQ
