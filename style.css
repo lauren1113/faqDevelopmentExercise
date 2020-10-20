@@ -1,0 +1,22 @@
+* {
+  background-color: #c097ab;
+  color: rgb(17, 0, 17);
+  font-family: 'Quicksand', sans-serif;
+  margin: 10px 5px;
+  font-size: 14px;
+}
+
+.header {
+  font-family: 'Dancing Script', cursive;
+  text-align: center;
+}
+
+#companyName {
+  font-size: 55px;
+}
+
+#headingSubtext {
+  font-size: 20px;
+}
+
+
