@@ -1,8 +1,4 @@
-# Curate FAQ Development Exercise
-
-## Overview
-
-Lauren Lazzaro's Development Exercise for Curate.
+# FAQ Development Exercise
 
 ### The Exercise:
 
