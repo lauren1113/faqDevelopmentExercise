@@ -9,20 +9,23 @@
 .header * {
   font-family: 'Dancing Script', cursive;
   background-color: #c097ab;
+  margin: 0px;
+  padding-bottom: 10px;
   display: flex;
   flex-direction: row;
-  margin: 0px;
   justify-content: space-around;
-  padding-bottom: 10px;
-  flex-wrap: nowrap;
 }
 
 #headContainer {
-  flex-direction: row;
+  justify-content: space-evenly;
+  flex-flow: row nowrap;
 }
 
 #headerText {
   flex-direction: column;
+  justify-content: center;
+  height: 300px;
+  width: auto;
 }
 
 #companyName {
@@ -30,20 +33,18 @@
 }
 
 #headingSubtext {
-  font-size: 20px;
+  font-size: 22px;
 }
 
 #headerImageContainer {
-  width: 350px;
-  height: auto;
+  height: 300px;
+  width: auto;
 }
 
 #headerImage {
-  width: 250px;
-  height: auto;
-  flex-wrap: nowrap;
-  flex-direction: row;
-
+  height: 200px;
+  width: auto;
+  justify-content: right;
 }
 
 #faqContainer {
