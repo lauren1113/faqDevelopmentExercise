@@ -62,25 +62,29 @@
 #listOfServices {
   display: flex;
   flex-direction: row;
+  justify-content: space-evenly;
+  padding-left: 35px;
+  padding-right: 35px;
 }
 
 .services {
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 
 #serv1img {
-  width: 300px;
+  width: 350px;
   height: auto;
 }
 
 #serv2img {
   height: 400px;
-  width: auto;
+  width: 326px;
 }
 
 #serv3img {
-  width: 300px;
+  width: 350px;
   height: auto;
 }
 
