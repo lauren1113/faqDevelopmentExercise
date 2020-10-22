@@ -6,6 +6,8 @@
   font-size: 16px;
 }
 
+/* HEADER */
+
 .header * {
   font-family: 'Dancing Script', cursive;
   background-color: #c097ab;
@@ -47,15 +49,47 @@
   justify-content: right;
 }
 
+.sectionHeading {
+  font-family: 'Dancing Script', cursive;
+  font-size: 40px;
+  padding: 3px;
+  text-align: center;
+}
+
+/* HOME PAGE */
+
+/* SERVICES */
+#listOfServices {
+  display: flex;
+  flex-direction: row;
+}
+
+.services {
+  display: flex;
+  flex-direction: column;
+}
+
+#serv1img {
+  width: 300px;
+  height: auto;
+}
+
+#serv2img {
+  height: 400px;
+  width: auto;
+}
+
+#serv3img {
+  width: 300px;
+  height: auto;
+}
+
+/* FAQ Page */
+
 #faqContainer {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-}
-
-.pageTitle {
-  font-size: 35px;
-  padding: 3px;
 }
 
 #faqImage {
