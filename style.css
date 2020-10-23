@@ -237,7 +237,7 @@ footer * {
 #faqContainer {
   display: flex;
   flex-direction: row;
-  margin-bottom: 50px;
+  margin: 0px 50px 50px 30px;
 }
 
 #faqImage {
@@ -248,6 +248,16 @@ footer * {
 
 #faqTextContainer {
   margin-top: 20px;
+}
+
+.question {
+  font-weight: bold;
+  margin: 10px;
+}
+
+.answer {
+  font-weight: normal;
+  margin-top: 5px;
 }
 
 #faq-closing {
