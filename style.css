@@ -314,3 +314,57 @@ footer * {
   width: auto;
   margin: 30px;
 }
+
+/* LOG IN PAGE */
+
+.loginPageContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.signInSection {
+  border: 2px solid #c097ab;
+  border-radius: 4px;
+  margin: 20px;
+  padding: 5px 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.signInHeading {
+  font-family: 'Dancing Script', cursive;
+  font-size: 40px;
+  text-align: center;
+}
+
+.signInField {
+  padding: 8px;
+  margin: 12px;
+  border-radius: 4px;
+  border: 2px solid #c097ab;
+  width: 75%;
+}
+
+.submitButton-signIn {
+  padding: 5px 15px;
+  border-radius: 4px;
+  background-color: #c097ab;
+  display: flex;
+}
+
+.submitButton-signIn:hover {
+  background-color: rgb(241, 180, 67);
+}
+
+#signInFormImg {
+  width: 220px;
+  height: auto;
+}
+
+#loginPageImg {
+  width: 33%;
+  height: auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
