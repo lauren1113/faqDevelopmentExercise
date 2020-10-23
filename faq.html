@@ -3,27 +3,42 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Frequently Asked Questions</title>
+  <title>Ashlynn's Arrangements</title>
   <link href="/style.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Quicksand&display=swap" rel="stylesheet">
 </head>
-<header>
-  <div class="header" id="headContainer">
-    <div class="header" id="headerText">
-      <h1 class="header" id="companyName">Ashlynn's Arrangements</h1>
-      <h3 class="header" id="headingSubtext">Floral Arrangements for Every Occasion</h3>
-      <div id="headerImageContainer">
-        <img id="headerImage" src="/images/hunter-desmarais-hUc3HEtxl14-unsplash.jpg"/>
+<body>
+  <nav id="navBar">
+    <div id="navBarContainer">
+      <h2 id="nav-title">Ashlynn's Arrangements</h2>
+      <div id="navButtonsContainer">
+        <button class="navButton" id="nav-homeButton"><a href="./index.html">Home</a></button>
+        <button class="navButton">Products & Services</button>
+        <button class="navButton"><a href="./faq.html">FAQ</a></button>
+        <button class="navButton"><a href="./contact.html">Contact Us</a></button>
+        <button class="navButton"><a href="./login.html">User Login</a></button>
       </div>
     </div>
-</div>
-<break></break>
-</header>
-<body>
+  </nav>
+  <header>
+    <div class="header" id="headContainer">
+      <div class="headerImageContainer">
+        <img class="headerImage" id="headerImage1" src="https://github.com/lauren1113/faqDevelopmentExercise/blob/master/Images/kelly-sikkema-mVnfpqTqPJU-unsplash.jpg?raw=true"/>
+      </div>
+      <div class="header" id="headerText">
+        <h1 class="companyName">Ashlynn's Arrangements</h1>
+        <h3 class="header" id="headingSubtext">Floral Arrangements for Every Occasion</h3>
+      </div>
+      <div class="headerImageContainer">
+        <img class="headerImage" id="headerImage2" src="https://github.com/lauren1113/faqDevelopmentExercise/blob/master/Images/andrea-mininni-jQeN6jyo0nE-unsplash-cropped.jpg?raw=true"/>
+      </div>
+  </div>
+  <break></break>
+  </header>
   <h1 class="sectionHeading">Frequently Asked Questions</h1>
   <div id="faqContainer">
     <div id="faqImageContainer">
-      <img id="faqImage" src="/images/andrea-mininni-jQeN6jyo0nE-unsplash.jpg"/>
+      <img id="faqImage" src="https://github.com/lauren1113/faqDevelopmentExercise/blob/master/Images/kevin-kurek-hGfuYpPhpHY-unsplash.jpg?raw=true"/>
     </div>
     <div id="faqTextContainer">
     <ul>
@@ -49,16 +64,16 @@
   </div>
   </div>
   <break></break>
-  <div class="contactForm">
-    <form>
-      <p>Have a question you don't see answered above? Please contact us using the form below!</p>
-      <form action="https://formspree.io/f/mleobdjq" method="POST">
-        <input class="button" type="text" name="name" placeholder="Your Name">
-        <input class="button" type="email" name="_replyto" placeholder="Your Email">
-        <input class="button" type="text" name="question" placeholder="Your Question">
-        <input class="button" type="submit" value="Submit">
-      </form>
-    </form>
-  </div>
+  <h3 id="faq-closing">If you have a question you don't see answered above, please <a href="./contact.html">contact us</a>!</h3>
+  <footer>
+    <h3 id="footer-companyName">Ashlynn's Arrangements</h3>
+    <div class="footer-text">
+      <p class="footer-text">345 Floral Lane, Lake Saint Louis, MO</p>
+      <p class="footer-text"> | </p>
+      <p class="footer-text">555-333-5353</p>
+      <p class="footer-text"> | </p>
+      <p class="footer-text">info@ashlynnsarrangements.com</p>
+    </div>
+  </footer>
 </body>
 </html>

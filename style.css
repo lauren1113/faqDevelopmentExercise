@@ -232,26 +232,85 @@ footer * {
 }
 
 
-
-
 /* FAQ Page */
 
 #faqContainer {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  margin-bottom: 50px;
 }
 
 #faqImage {
   height: 400px;
+  width: auto;
+  margin-top: 40px;
+}
+
+#faqTextContainer {
+  margin-top: 20px;
+}
+
+#faq-closing {
+  font-weight: bold;
+  font-size: 18px;
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+/* CONTACT US */
+
+#contactPageContainer {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
 }
 
 .contactForm * {
-  background-color: #c097ab;
   font-size: 16px;
-  padding: 12px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  margin: 10px;
+  width: 85%;
 }
 
 .button {
   border-radius: 4px;
+  width: 500px;
+}
+
+#contact-message {
+  padding-bottom: 100px;
+}
+
+#submitButton {
+  background-color: #c097ab;
+  text-align: center;
+  padding: 10px;
+  width: 90px;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+#submitButton:hover {
+  background-color: #9685c5;
+}
+
+#contactMessage {
+  padding-bottom: 60px;
+}
+
+#contactPageImage {
+  height: 250px;
+  width: auto;
+  margin: 30px;
+  margin-top: 60px;
+}
+
+#contactImage2 {
+  height: 350px;
+  width: auto;
+  margin: 30px;
 }
