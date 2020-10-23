@@ -51,7 +51,7 @@
 
 .sectionHeading {
   font-family: 'Dancing Script', cursive;
-  font-size: 40px;
+  font-size: 45px;
   padding: 5px;
   text-align: center;
 }
@@ -60,7 +60,7 @@
   font-family: 'Dancing Script', cursive;
   font-size: 20px;
   text-align: center;
-  margin-top: 30px;
+  margin-top: 50px;
 }
 
 /* HOME PAGE */
@@ -117,6 +117,54 @@
 .number {
   font-size: 30px;
 }
+
+/* HOME-Reviews */
+#whyLoveUs {
+  margin: 30px;
+  display: flex;
+  align-content: center;
+}
+
+#loveUsText {
+  margin-right: 80px;
+  margin-left: 50px;
+  padding-right: 75px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: flex-around;
+}
+
+#loveUsList {
+  font-weight: bold;
+}
+
+#flowerHeart {
+  width: 350px;
+  height: auto;
+}
+
+#reviewsSection {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.reviewContainer {
+  display: flex;
+  flex-direction: column;
+  width: 25%;
+}
+
+.reviewTitle {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.reviewerName {
+  font-weight: bold;
+}
+
 
 
 
