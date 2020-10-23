@@ -2,7 +2,6 @@
   background-color: rgb(245, 245, 230);
   color: rgb(17, 0, 17);
   font-family: 'Quicksand', sans-serif;
-  margin: 10px 5px;
   font-size: 16px;
 }
 
@@ -12,22 +11,26 @@
   font-family: 'Dancing Script', cursive;
   background-color: #c097ab;
   margin: 0px;
-  padding-bottom: 10px;
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  align-items: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 #headContainer {
-  justify-content: space-evenly;
+  background-color: #c097ab;
+  display: flex;
   flex-flow: row nowrap;
+  padding: 5px;
 }
 
 #headerText {
+  display: flex;
   flex-direction: column;
   justify-content: center;
-  height: 300px;
-  width: auto;
+  align-items: center;
+  padding: 10px;
 }
 
 .companyName {
@@ -38,15 +41,14 @@
   font-size: 22px;
 }
 
-#headerImageContainer {
-  height: 300px;
+#headerImg1 {
+  height: 250px;
   width: auto;
 }
 
-#headerImage {
-  height: 200px;
+#headerImg2 {
+  height: 150px;
   width: auto;
-  justify-content: right;
 }
 
 /* Section Headings */
