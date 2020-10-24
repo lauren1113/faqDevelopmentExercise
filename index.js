@@ -1,20 +1,35 @@
-<script>
-  // Your web app's Firebase configuration
-  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
-  var firebaseConfig = {
-    apiKey: process.env.FIREBASE_API,
-    authDomain: "ashlynns-arrangements-admin-db.firebaseapp.com",
-    databaseURL: "https://ashlynns-arrangements-admin-db.firebaseio.com",
-    projectId: "ashlynns-arrangements-admin-db",
-    storageBucket: "ashlynns-arrangements-admin-db.appspot.com",
-    messagingSenderId: "381803912491",
-    appId: process.env.FIREBASE_ID,
-    measurementId: "G-1N6G5KWPP6"
-  };
+import { Header, Logo, pageTitle, Main, Footer } from "./components";
+import * as state from "./store";
+import Navigo from "navigo";
+import { capitalize } from "lodash";
+import axios from "axios";
+import "./env";
+import { auth, db } from "./firebase";
+
+router
+  .on(":view", handleRoute)
+  .on("/", () => render(state.Home))
+  .resolve();
+function handleRoute(params) {
+  const view = params.view;
+  render(state[view]);
+}
+
+router.updatePageLinks();
+
+function render(st) {
+  document.querySelector("#root").innerHTML = `
+    ${Header(st)}
+    ${Logo()}
+    ${pageTitle(st)}
+    ${Main(st)}
+    ${Footer()}
+  `;
+
   // Initialize Firebase
   firebase.initializeApp(firebaseConfig);
   firebase.analytics();
-</script>
+
 
 // [FIREBASE USER DATABASE]
 

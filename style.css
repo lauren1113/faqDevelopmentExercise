@@ -21,6 +21,7 @@
 #navButtonsContainer {
   display: flex;
   flex-direction: row;
+  margin-left: 570px
 }
 
 .navButton {
@@ -34,10 +35,6 @@
 
 .navButton:hover {
   background-color: #c097ab;
-}
-
-#nav-homeButton {
-  margin-left: 570px
 }
 
 /* HEADER */
