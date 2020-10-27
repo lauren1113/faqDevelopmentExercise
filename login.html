@@ -9,7 +9,84 @@
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 </head>
 <body>
+  <nav id="navBar">
+    <div id="navBarContainer">
+      <h2 id="nav-title">Ashlynn's Arrangements</h2>
+      <div id="navButtonsContainer">
+        <button class="navButton" id="nav-homeButton"><a href="/index.html">Home</a></button>
+        <button class="navButton">Products & Services</button>
+        <button class="navButton"><a href="/faq.html">FAQ</a></button>
+        <button class="navButton"><a href="/contact.html">Contact Us</a></button>
+        <button class="navButton"><a href="/login.html">User Login</a></button>
+      </div>
+    </div>
+  </nav>
+  <header>
+    <div class="header" id="headContainer">
+      <div class="headerImageContainer">
+        <img class="headerImage" id="headerImage1" src="https://github.com/lauren1113/faqDevelopmentExercise/blob/master/Images/kelly-sikkema-mVnfpqTqPJU-unsplash.jpg?raw=true"/>
+      </div>
+      <div class="header" id="headerText">
+        <h1 class="companyName">Ashlynn's Arrangements</h1>
+        <h3 class="header" id="headingSubtext">Floral Arrangements for Every Occasion</h3>
+      </div>
+      <div class="headerImageContainer">
+        <img class="headerImage" id="headerImage2" src="https://github.com/lauren1113/faqDevelopmentExercise/blob/master/Images/andrea-mininni-jQeN6jyo0nE-unsplash-cropped.jpg?raw=true"/>
+      </div>
+    </div>
+    <break></break>
+    </header>
+  <div class="loginPageContainer">
+    <div class="signInSection" id="existingUserContainer">
+      <p class="signInHeading">Sign In</p>
+      <form class="signInForm" id="existingUserForm">
+        <label for="email">Email: </label>
+        <input type="email" name="email" class="signInField" placeholder="enter your email">
+        <br>
+        <label for="password">Password: </label>
+        <input type="password" name="password" class="signInField" placeholder="enter your password">
+        <br>
+        <br>
+        <input type="submit" class="submitButton-signIn" id="sign-in-button" value="Sign In">
+      </form>
+      <br>
+      <img id="signInFormImg" src="https://github.com/lauren1113/faqDevelopmentExercise/blob/master/Images/cropped-bouquet.jpg?raw=true"/>
+    </div>
 
+    <img id="loginPageImg" src="https://github.com/lauren1113/faqDevelopmentExercise/blob/master/Images/cropped-vase.jpg?raw=true"/>
+
+    <div class="signInSection" id="register">
+      <p class="signInHeading">Create An Account</p>
+      <form class="signInForm" id = "newUserForm">
+        <label for="firstName">First Name: </label>
+        <input type="text" name="firstName" id="firstName" class="signInField" placeholder="First Name">
+        <br>
+        <label for="lastName">Last Name: </label>
+        <input type="text" name="lastName" id="lastName" class="signInField" placeholder="Last Name">
+        <br>
+        <label for="email">Email: </label>
+        <input type="email" name="email" class="signInField" placeholder="enter your email">
+        <br>
+        <label for="password">Password: </label>
+        <input type="password" name="password" class="signInField" placeholder="create a password">
+        <br>
+        <br>
+        <input type="submit" class="submitButton-signIn" id="register-button" value="Create Account">
+      </form>
+      <br>
+    </div>
+    </div>
+    </div>
+    <footer>
+      <h3 id="footer-companyName">Ashlynn's Arrangements</h3>
+      <div class="footer-text">
+        <p class="footer-text">345 Floral Lane, Lake Saint Louis, MO</p>
+        <p class="footer-text"> | </p>
+        <p class="footer-text">555-333-5353</p>
+        <p class="footer-text"> | </p>
+        <p class="footer-text">info@ashlynnsarrangements.com</p>
+      </div>
+    </footer>
   <script src="index.js"></script>
 </body>
 </html>
