@@ -46,6 +46,48 @@ function render(st) {
     listenForAuthChange();
     listenForRegister(st);
     listenForSignIn(st);
+    listenForAdminUser(st);
+    getUserDataByUID(st);
+    getUserDataByEmail(st);
+  }
+  addSignInListeners();
+
+  // Fetch User Data from Firestore by User ID
+  function getUserDataByUID(st) {
+    admin
+      .auth()
+      .getUser(uid)
+      .then(function(userRecord) {
+        console.log("Successfully fetched user data:", userRecord.toJSON());
+      })
+      .catch(function(error) {
+        console.log("Error fetching user data:", error);
+      });
+  }
+
+  // Fetch User Data from Firestore by Email
+  function getUserDataByEmail(st) {
+    admin
+      .auth()
+      .getUserByEmail(email)
+      .then(function(userRecord) {
+        // See the UserRecord reference doc for the contents of userRecord.
+        console.log("Successfully fetched user data:", userRecord.toJSON());
+      })
+      .catch(function(error) {
+        console.log("Error fetching user data:", error);
+      });
+  }
+
+  // If Admin user is logged in...
+
+  function listenForAdminUser(st) {
+    admin
+      .auth()
+      .setCustomUserClaims(uid, { admin: true })
+      .then(() => {
+        // add page to edit FAQ
+      });
   }
 
   // FUNCTIONS & EVENT LISTENERS
@@ -53,14 +95,14 @@ function render(st) {
     // select link in header
     document.querySelector("header a").addEventListener("click", event => {
       // if user is logged in,
-      if (user.loggedIn) {
+      if (user.signedIn) {
         event.preventDefault();
         // log out functionality
         auth.signOut().then(() => {
           logOutUserInDb(user.email);
           resetUserInState();
           // update user in database
-          db.collection("Users").get;
+          db.collection("users").get;
           render(state.Home);
           router.navigate("/Home");
         });
@@ -69,14 +111,14 @@ function render(st) {
     });
   }
   function logOutUserInDb(email) {
-    if (state.User.loggedIn) {
-      db.collection("Users")
+    if (state.User.signedIn) {
+      db.collection("users")
         .get()
         .then(snapshot =>
           snapshot.docs.forEach(doc => {
             if (email === doc.data().email) {
               let id = doc.id;
-              db.collection("Users")
+              db.collection("users")
                 .doc(id)
                 .update({ signedIn: false });
             }
@@ -89,7 +131,7 @@ function render(st) {
     state.User.firstName = "";
     state.User.lastName = "";
     state.User.email = "";
-    state.User.loggedIn = false;
+    state.User.signedIn = false;
   }
 
   function listenForAuthChange() {
@@ -124,9 +166,9 @@ function render(st) {
     state.User.firstName = first;
     state.User.lastName = last;
     state.User.email = email;
-    state.User.loggedIn = true;
+    state.User.signedIn = true;
 
-    db.collection("Users").add({
+    db.collection("users").add({
       firstName: first,
       lastName: last,
       email: email,
@@ -155,13 +197,13 @@ function render(st) {
   }
   function getUserFromDb(email) {
     return db
-      .collection("Users")
+      .collection("users")
       .get()
       .then(snapshot =>
         snapshot.docs.forEach(doc => {
           if (email === doc.data().email) {
             let id = doc.id;
-            db.collection("Users")
+            db.collection("users")
               .doc(id)
               .update({ signedIn: true });
             let user = doc.data();
@@ -169,7 +211,7 @@ function render(st) {
             state.User.firstName = user.firstName;
             state.User.lastName = user.lastName;
             state.User.email = email;
-            state.User.loggedIn = true;
+            state.User.signedIn = true;
           }
         })
       );

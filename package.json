@@ -14,6 +14,7 @@
     "eslint": "^6.8.0",
     "eslint-config-prettier": "^6.14.0",
     "eslint-plugin-prettier": "^3.1.4",
+    "parcel-bundler": "^1.12.4",
     "prettier": "^1.19.1",
     "stylelint": "^13.7.2",
     "stylelint-config-prettier": "^6.0.0",
@@ -30,7 +31,6 @@
     "navigo": "^7.1.2",
     "node-forge": "^0.10.0",
     "page": "^1.11.6",
-    "parcel-bundler": "^1.12.4",
     "postcss": "^8.1.4"
   }
 }

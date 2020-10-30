@@ -33,6 +33,14 @@
   margin-bottom: 20px;
 }
 
+#logInLogOutButton {
+  font-size: 14px;
+  font-weight: bold;
+  padding: 0px 12px;
+  border-radius: 4px;
+  margin-bottom: 20px;
+}
+
 .navButton:hover {
   background-color: #c097ab;
 }
@@ -257,11 +265,42 @@ footer * {
   margin-top: 5px;
 }
 
+#newFaqContainer {
+  display: flex;
+  flex-direction: column;
+  margin: 15px;
+  padding: 15px;
+  justify-content: space-around;
+}
+
+.newFAQField {
+  display: flex;
+  flex-direction: row;
+  padding: 15px;
+  border-radius: 4px;
+}
+
+.newFAQ {
+  margin: 10px;
+  padding: 10px;
+  border-radius: 4px;
+}
+
 #faq-closing {
   font-weight: bold;
   font-size: 18px;
   margin-bottom: 50px;
   text-align: center;
+}
+
+#adminSubmit {
+  background-color: #c097ab;
+  text-align: center;
+  padding: 10px;
+  width: 90px;
+  font-weight: bold;
+  font-size: 20px;
+margin-left: 150px;
 }
 
 /* CONTACT US */
@@ -283,7 +322,7 @@ footer * {
   width: 85%;
 }
 
-.button {
+.contactField {
   border-radius: 4px;
   width: 500px;
 }
