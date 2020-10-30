@@ -46,7 +46,7 @@ function render(st) {
     listenForAuthChange();
     listenForRegister(st);
     listenForSignIn(st);
-    listenForAdminUser(st);
+    renderAdminFAQPage(st);
     getUserDataByUID(st);
     getUserDataByEmail(st);
   }
@@ -79,15 +79,43 @@ function render(st) {
       });
   }
 
-  // If Admin user is logged in...
+  // If Admin user is logged in, clicking "FAQ" will take them to admin FAQ page.
 
-  function listenForAdminUser(st) {
-    admin
-      .auth()
-      .setCustomUserClaims(uid, { admin: true })
-      .then(() => {
-        // add page to edit FAQ
+  function renderAdminFAQPage(st) {
+    document.getElementById("faqLink").addEventListener("click", function() {
+      if (state.User.Admin === true) {
+        render("./adminFAQ"), router.navigate("./adminFAQ");
+      }
+    });
+  }
+
+  // function listenForAdminFAQ(st) {
+    if (st.view === "adminFAQ") {
+      document.getElementById("adminFaqForm").addEventListener("submit", event => {
+        event.preventDefault();
+        let inputList = Array.from(event.target.elements);
+        //remove submit button from array
+        inputList.pop();
+        const inputs = inputList.map(input => input.value);
+        let newQ1 = inputs[0];
+        let newA1 = inputs[1];
+        let newQ2 = inputs[2];
+        let newA2 = inputs[3];
+        let newQ3 = inputs[4];
+        let newA3 = inputs[5];
       });
+      addNewFaqToPage();
+    }
+  }
+
+  // add new FAQ to FAQ page
+  function addNewFaqToPage() {
+    document.querySelector("#newQ1").innerHTML = newQ1;
+    document.querySelector("#newA1").innerHTML = newA1;
+    document.querySelector("#newQ2").innerHTML = newQ2;
+    document.querySelector("#newA2").innerHTML = newA2;
+    document.querySelector("#newQ3").innerHTML = newQ3;
+    document.querySelector("#newA3").innerHTML = newA3;
   }
 
   // FUNCTIONS & EVENT LISTENERS
